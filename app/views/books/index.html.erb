@@ -1,0 +1,37 @@
+<table>
+    <thead>
+
+    <tr>
+     <th>Books</th>
+     <th>Authors</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr> 
+         <td style="text-transform: uppercase;"><%= book.title %></td>
+         <td style="text-transform: uppercase;"><i><%= book.author.name %></strong></i>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br><br><br>
+<table>
+    <thead>
+
+    <tr>
+     <th>Name</th>
+     <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @authors.each do |author| %>
+      <tr> 
+         <td style="text-transform: uppercase;"><%= author.name%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
